@@ -28,9 +28,9 @@
       "@app/*": ["app/*"],
       "@shared/*": ["app/shared/*"],
       "@store/*": ["app/store/*"],
-      "@views/*": ["app/views/*"],
       "@env": ["environments/environment"],
-      "@ui/*": ["app/ui/theme/*"],
+      "@theme/*": ["app/ui/theme/*"],
+      "@ui/*": ["app/ui/*"],
       "@package": [
         "../package.json"
       ],
@@ -44,6 +44,7 @@
     "enableI18nLegacyMessageIdFormat": false,
     "strictInjectionParameters": true,
     "strictInputAccessModifiers": true,
-    "strictTemplates": true
+    "strictTemplates": true,
+    "emitDecoratorMetadata": true
   }
 }

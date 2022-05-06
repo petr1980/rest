@@ -1,10 +1,11 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { LayoutComponent } from './layout.component';
-import { FooterComponent } from './components/footer/footer.component';
-import {MainComponent} from "@ui/layout/components/main/main.component";
+
 import {Routes, RouterModule} from "@angular/router";
-import {HeaderModule} from "@ui/layout/components/header/header.module";
+import {MainModule} from "@theme/layout/components/main/main.module";
+import {HeaderModule} from "@theme/layout/components/header/header.module";
+import {FooterModule} from "@theme/layout/components/footer/footer.module";
 
 
 
@@ -18,12 +19,12 @@ const routes: Routes = [
 @NgModule({
   declarations: [
     LayoutComponent,
-    FooterComponent,
-    MainComponent
   ],
   imports: [
     CommonModule,
+    MainModule,
     HeaderModule,
+    FooterModule,
     RouterModule.forChild(routes)
   ]
 })
